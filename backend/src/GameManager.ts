@@ -25,8 +25,8 @@ export class GameManager{
 
     private addHandler(socket: WebSocket){
         socket.on("message", (data) => {
-            const msg = JSON.parse(data.toString());
-            if(msg.type === INIT_GAME){
+            const message = JSON.parse(data.toString());
+            if(message.type === INIT_GAME){
                 if(this.pendingUser){
                     const game = new Game(this.pendingUser, socket);
                     this.games.push(game);
@@ -36,12 +36,12 @@ export class GameManager{
                 }
             }
             
-            if (msg.type === MOVE) {
+            if (message.type === MOVE) {
                 console.log("inside move")
                 const game = this.games.find(game => game.player1 === socket || game.player2 === socket);
                 if (game) {
                     console.log("inside makemove")
-                    game.makeMove(socket, msg.payload.move);
+                    game.makeMove(socket, message.payload.move);
                 }
             }
         })

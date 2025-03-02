@@ -52,7 +52,8 @@ npm install
 #### Start Backend Server
 ```sh
 cd backend
-npm run dev
+tsc -b
+node .\dist\index.js
 ```
 
 #### Start Frontend Server
@@ -63,20 +64,3 @@ npm run dev
 
 The application should now be running on `http://localhost:5173` (default Vite port).
 
-## Folder Structure
-```
-chess-game/
-│── backend/         # Node.js + Express Backend
-│── frontend/        # React Frontend (Vite)
-│── README.md        # Project Documentation
-│── package.json     # Project Metadata
-```
-
-## Contribution
-Feel free to fork this repository and submit a pull request.
-
-## License
-This project is licensed under the MIT License.
-
-## Contact
-For any inquiries, contact [your email or GitHub profile].

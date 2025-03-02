@@ -27,7 +27,7 @@ A full-stack chess game built using **TypeScript** with **Node.js** for the back
 ## Installation & Setup
 
 ### Prerequisites
-Ensure you have **Node.js (>= 16.x.x)** and **npm** installed.
+Ensure you have **Node.js** and **npm** installed.
 
 ### Clone the Repository
 ```sh

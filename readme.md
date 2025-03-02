@@ -32,7 +32,7 @@ Ensure you have **Node.js (>= 16.x.x)** and **npm** installed.
 ### Clone the Repository
 ```sh
 git clone https://github.com/ModitParmar01/MindOverBoard.git
-cd chess-game
+cd MindOverBoard
 ```
 
 ### Install Dependencies
